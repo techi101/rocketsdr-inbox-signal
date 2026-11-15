@@ -1,0 +1,22 @@
+Set: blind (40 synthetic replies)  run at 2026-11-15T10:25:28.681Z
+
+== Inbox Signal (this tool)
+signal correct (human / auto inbox / pre inbox): 40/40 (100%)
+label correct (12 labels): 40/40 (100%)
+pre-inbox notices counted as an inbox signal: 0
+human replies counted as auto: 0 | auto replies counted as human: 0
+confusion (rows = gold, cols = predicted): {"human":{"human":18,"auto_inbox":0,"pre_inbox":0},"auto_inbox":{"human":0,"auto_inbox":13,"pre_inbox":0},"pre_inbox":{"human":0,"auto_inbox":0,"pre_inbox":9}}
+
+== Keyword rules
+signal correct (human / auto inbox / pre inbox): 33/40 (83%)
+label correct (12 labels): 16/40 (40%)
+pre-inbox notices counted as an inbox signal: 2
+human replies counted as auto: 1 | auto replies counted as human: 4
+confusion (rows = gold, cols = predicted): {"human":{"human":17,"auto_inbox":1,"pre_inbox":0},"auto_inbox":{"human":4,"auto_inbox":9,"pre_inbox":0},"pre_inbox":{"human":2,"auto_inbox":0,"pre_inbox":7}}
+
+== Headers only
+signal correct (human / auto inbox / pre inbox): 33/40 (83%)
+label correct (12 labels): 10/40 (25%)
+pre-inbox notices counted as an inbox signal: 2
+human replies counted as auto: 0 | auto replies counted as human: 5
+confusion (rows = gold, cols = predicted): {"human":{"human":18,"auto_inbox":0,"pre_inbox":0},"auto_inbox":{"human":5,"auto_inbox":8,"pre_inbox":0},"pre_inbox":{"human":2,"auto_inbox":0,"pre_inbox":7}}
