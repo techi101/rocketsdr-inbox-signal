@@ -61,7 +61,7 @@ The simulator runs 200 times. Each run has 40 campaigns × 3 recipient providers
 - The link ÷ no link ratio is computed with Mantel-Haenszel across campaigns, as in the post.
 
 What I found (default seed):
-- With no leak, the three methods give the same median ratios. The baselines' errors on these samples mostly **widen the spread**: the Google auto-reply ratio's 5 to 95% range goes from 1.17–1.79 with true labels to 0.92–2.31 with keyword or header labels, which now crosses 1.0.
+- With no leak, the three methods give nearly the same median ratios (Google 1.44 true vs 1.48 keyword). The baselines' errors on these samples mostly **widen the spread**: the Google auto-reply ratio's 5 to 95% range goes from 1.17–1.79 with true labels to 0.92–2.31 with keyword or header labels, which now crosses 1.0.
 - **What-if leak:** if 5% of bounce, delay and hold notices are filed as automatic replies, the Microsoft auto-reply ratio reads 0.70 instead of 0.41. Add 2% extra rejections when the email has a link and it reads 0.82 (true 0.42). Raise the leak to 10% with the same 2% and it reads 0.97, so the link penalty disappears from the readout.
 
 ## Honest limits
